@@ -8,15 +8,13 @@ public class Polynomial {
 	public double[] coef = new double[0];
 	public int[] exponents = new int[0];
 
-	public Polynomial(int polSyze) {
-		this.coef = new double[polSyze];
-		this.exponents = new int[polSyze];
-	   for (int i = 0; i< coef.length; i++) {
-		   this.coef[i] = 0;
-		   this.exponents[i] = 0;
-	   }
+	public Polynomial() {
+	
+		this.coef = null;
+		this.exponents = null;
+	}
+	
 	   
-   }
 	
 	//file reader
 	public String newPolynomialString(String file) throws FileNotFoundException{
